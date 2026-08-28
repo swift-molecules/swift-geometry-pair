@@ -19,7 +19,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-molecules/swift-geometry.git",
+            url: "https://github.com/swift-atoms/swift-geometry.git",
             branch: "main"
         ),
         .package(
@@ -39,6 +39,8 @@ let package = Package(
             name: "Geometry Pair Tests",
             dependencies: [
                 "Geometry Pair",
+                .product(name: "Geometry", package: "swift-geometry"),
+                .product(name: "Pair", package: "swift-pair"),
             ]
         ),
     ],
