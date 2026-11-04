@@ -1,7 +1,3 @@
 # swift-geometry-pair
 
-Integration of the Geometry domain with the Pair domain.
-
-The `Geometry Pair` product provides `Curvature.Value<Payload>`, a pair whose
-first component is a `Curvature` and whose second component is the caller's
-payload type.
+Use this package when you need a `Curvature` held together with a payload as one value. Start from `Curvature.Value<Payload>`, which is `Pair<Curvature, Payload>` with the curvature as `first`. Everything swift-pair does with a `Pair<First, Second>` works on it. For `Curvature` itself, use swift-geometry.
